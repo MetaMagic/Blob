@@ -20,24 +20,28 @@ public class ColorImageManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		colorTexture = new Texture2D(640, 480, TextureFormat.ARGB32, false);
+		GetComponent<GUITexture>().texture = colorTexture;
 		//readFromOutputImage();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(timer >= 0.01){
+		//if(timer >= 0.0001){
 			timer = 0f;
 			generateNewColorTexture();	
 			// Setting the color image from the camera to be a GUITexture
-			GetComponent<GUITexture>().texture = colorTexture;
-		}
+			//GetComponent<GUITexture>().texture = colorTexture;
+		/*}
 		else{
 			timer += Time.deltaTime;
-		}
+		}*/
 	}
 	
 	private void generateNewColorTexture(){
 		IImageData cameraColorImage = IisuInput.ColorImage;	
+		if(cameraColorImage == null){
+			return;
+		}
 		
 		if(colorImage == null || colorImage.Length != cameraColorImage.ImageInfos.BytesRaw / 2){
 			colorImage = new Color32[640 * 480];
@@ -63,7 +67,6 @@ public class ColorImageManager : MonoBehaviour {
             colorImage[pos].b = colorImageRaw[pos * 4];
             colorImage[pos].a = 255;
 		}*/
-		
 		
 		colorTexture.SetPixels32(colorImage);
         colorTexture.Apply();

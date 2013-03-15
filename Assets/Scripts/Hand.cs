@@ -21,19 +21,22 @@ public class Hand : MonoBehaviour {
 		
 		depthToColorRigid = new Matrix4x4();
 		
-		depthToColorRigid.m00 = 0.999871f;
+		//depthToColorRigid.m00 = 0.999871f;
+		depthToColorRigid.m00 = 1.2f;
 		depthToColorRigid.m01 = -0.001319f;
 		depthToColorRigid.m02 = -0.0159946f;
 		depthToColorRigid.m03 = 0.024492f;
 		
 		depthToColorRigid.m10 = 0.00120216f;
-		depthToColorRigid.m11 = -0.999973f;
+		//depthToColorRigid.m11 = -0.999973f;
+		depthToColorRigid.m11 = -1.2f;
 		depthToColorRigid.m12 = -0.00728971f;
 		depthToColorRigid.m13 = -0.000508f;
 		
 		depthToColorRigid.m20 = 0.0160038f;
 		depthToColorRigid.m21 = 0.00726954f;
-		depthToColorRigid.m22 = 0.999846f;
+		//depthToColorRigid.m22 = 0.999846f;
+		depthToColorRigid.m22 = 1.2f;
 		depthToColorRigid.m23 = -0.000863f;
 		depthToColorRigid.SetRow(3, Vector4.zero);
 		depthToColorRigid.m33 = 1f;
