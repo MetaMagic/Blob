@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FPS.cs">
+    <Files>
+      <File FileName="Assets\Scripts\iisu\Hand.cs" Line="65" Column="37" />
+      <File FileName="Assets\Scripts\iisu\ColorImageManager.cs" Line="22" Column="36" />
+      <File FileName="Assets\Scripts\iisu\HandIisuInput.cs" Line="118" Column="22" />
+      <File FileName="Assets\Scripts\FPS.cs" Line="40" Column="61" />
+      <File FileName="Assets\Scripts\MainCamera.cs" Line="72" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
