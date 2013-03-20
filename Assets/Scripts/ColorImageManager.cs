@@ -76,6 +76,9 @@ public class ColorImageManager : MonoBehaviour {
 			StopCoroutine("CallPluginAtEndOfFrames");
         	Application.Quit();
     	}
+    	else if(Input.GetKey(KeyCode.S)){
+			StopCoroutine("CallPluginAtEndOfFrames");
+		}
 	}
 	
 	private IEnumerator CallPluginAtEndOfFrames ()
