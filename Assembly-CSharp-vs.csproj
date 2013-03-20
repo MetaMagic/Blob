@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ColorImageManager.cs" />
-     <Compile Include="Assets\Scripts\DebugOutput.cs" />
      <Compile Include="Assets\Scripts\DepthImage.cs" />
      <Compile Include="Assets\Scripts\FPS.cs" />
      <Compile Include="Assets\Scripts\Hand.cs" />
@@ -54,7 +53,11 @@
      <Compile Include="Assets\Scripts\iisu\HandIisuInput.cs" />
      <Compile Include="Assets\Scripts\iisu\IisuInputProvider.cs" />
      <None Include="Assets\Materials\AR_Shader.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Materials\Test_shader.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="iisuNet">
  <HintPath>Assets\Plugins\iisuNet.dll</HintPath>
  </Reference>

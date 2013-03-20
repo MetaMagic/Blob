@@ -44,4 +44,11 @@ public class MainCamera : MonoBehaviour {
 		
 		camera.projectionMatrix = projMat;
 	}
+	
+	void Update(){
+		if(Input.GetKey(KeyCode.Escape)){
+			Debug.Log("esec");
+        	Application.Quit();
+    	}
+	}
 }

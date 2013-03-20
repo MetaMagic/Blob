@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ColorImageManager.cs" />
-     <Compile Include="Assets\Scripts\DebugOutput.cs" />
      <Compile Include="Assets\Scripts\DepthImage.cs" />
      <Compile Include="Assets\Scripts\FPS.cs" />
      <Compile Include="Assets\Scripts\Hand.cs" />
@@ -54,6 +53,7 @@
      <Compile Include="Assets\Scripts\iisu\HandIisuInput.cs" />
      <Compile Include="Assets\Scripts\iisu\IisuInputProvider.cs" />
      <None Include="Assets\Materials\AR_Shader.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Materials\Test_shader.shader" />
  <Reference Include="iisuNet">
  <HintPath>Assets\Plugins\iisuNet.dll</HintPath>
@@ -61,6 +61,10 @@
  <Reference Include="iisUnity">
  <HintPath>Assets\Plugins\iisUnity.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{6BEDE5B6-F5C7-D1CA-BA38-2944F8FEA2AD}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

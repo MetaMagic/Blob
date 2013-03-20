@@ -83,14 +83,16 @@ public class HandIisuInput : MonoBehaviour {
 		//-----Vertices-----
 		Vector3[] vertices = new Vector3[_meshPointsValue.Length];
 		for(int i=0; i<vertices.Length; ++i){
-			vertices[i] = new Vector3(_meshPointsValue[i].X, _meshPointsValue[i].Y, _meshPointsValue[i].Z);
+			vertices[i] = Hand.depthToColorRigid.MultiplyPoint3x4(
+				new Vector3(_meshPointsValue[i].X, _meshPointsValue[i].Y, _meshPointsValue[i].Z));
 		}
 		hmi.Vertices = vertices;
 		
 		//-----Normals-----
 		Vector3[] normals = new Vector3[_meshNormalsValue.Length];
 		for(int i=0; i<normals.Length; ++i){
-			normals[i] = new Vector3(_meshNormalsValue[i].X, _meshNormalsValue[i].Y, _meshNormalsValue[i].Z);
+			normals[i] = Hand.depthToColorRigid.MultiplyPoint3x4(
+				new Vector3(_meshNormalsValue[i].X, _meshNormalsValue[i].Y, _meshNormalsValue[i].Z));
 		}
 		hmi.Normals = normals;
 		
